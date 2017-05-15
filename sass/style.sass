@@ -2,7 +2,7 @@ $dg: #1a3c00;
 $gg: #f6c92b;
 $gt: rgba(246,201,43,0.4);
 $dtr: rgba(26,60,0,0.4);
-$gtd: rgba(246,201,43,0.7);
+$gtd: rgba(246,201,43,0.9);
 @font-face
 	font-family: norse;
 	src: url(NB.ttf);
@@ -10,8 +10,8 @@ $gtd: rgba(246,201,43,0.7);
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-
 body
+	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 	background-image: url(vec.png);
@@ -20,121 +20,73 @@ body
 	width: 100%;
 	height: 100%;
 .container
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
-	font-size: 0;
 header
+	clear: both;
 	width: 100%;
 	margin: 0 auto;
-	margin-bottom: 50px;
 	font-size: 0;
-	height: 400px;
 	background: $gt;
 	border: 9px solid $dg;
 	border-left: 0;
 	border-right: 0;
 	img
 		display: inline-block;
-		height: 400px;
-		width: 25%;
-		margin-top: -9px;
+		height: 200px;
+		width: 20%;
 		border-radius: 150px
 .logo
 	display: inline-block;	
-	height: 100%;
-	width: 50%;
+	height: 200px
 	vertical-align: top;
-	padding: 4% 0;
+	width: 50%
 	h1
-		height: 100%;
+		width: 100%;
+		vertical-align: top;
+		position: relative;
 		margin: 0;
+		top: 5% ;
 		font-size: 150px;
 		text-align: center;
 		font-family: norse;
 		color: $dg;
 		text-shadow: rgb(245, 200, 40) -9px 9px 1px;
-	h2
-		text-align: center;
-		line-height: 30px;
-		z-index: -99;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		margin: 0;
-		margin-left: 5%
-		font-size: 26px;
+#amb
+	display: none;
+	height: 50px;
+	position: absolute;
+	vertical-align: top;
+	left: 0;
+	text-align: left;
+	padding-left: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: $dg;
+	background: none;
+	border: 0;
+	width: 100%;
+	&:first-letter
+		font-size: 30px;
 		font-weight: 700;
-		background: $dg;
-		border-bottom-right-radius: 100px;
-		border-bottom-left-radius: 100px;
-		border-top: 0;
-		padding: 10px 30px;
-		margin-top: 60px;
-		color: $gg;
+	&:hover
+		background: $gtd;
 .menu
 	background: #fff;
-	width: 100%;
 	font-size: 0;
-	display: inline-block;
 	ul
 		padding: 0;
 		width: 100%;
 		font-size: 0;
 		display: inline-block;
-		line-height: 25px;
 		li
 			font-size: 0;
 			display: inline-block;
 			width: 20%;
-			text-align: center;
-			&:first-of-type
-				&:hover
-						&:after
-							content: '';
-							display: block;
-							margin-top: -50px;
-							margin-left: 27%;
-							width: 120px;
-							height: 50px;
-							background-image: url(field1.png);
-			&:nth-of-type(2)
-				&:hover
-						&:after
-							content: '';
-							display: block;
-							margin-top: -50px;
-							margin-left: 40%;
-							width: 50px;
-							height: 50px;
-							background-image: url(ball.png);	
-			&:nth-of-type(3)
-				&:hover
-						&:after
-							content: '';
-							display: block;
-							margin-top: -50px;
-							margin-left: 10%;
-							width: 180px;
-							height: 50px;
-							background-image: url(bats.png);
-			&:nth-of-type(4)
-				&:hover
-						&:after
-							content: '';
-							display: block;
-							margin-top: -50px;
-							margin-left: 10%;
-							width: 180px;
-							height: 50px;
-							background-image: url(bat.png);
-			&:last-of-type
-				&:hover
-						&:after
-							content: '';
-							display: block;
-							margin-top: -50px;
-							margin-left: 30%;
-							width: 100px;
-							height: 50px;
-							background-image: url(hat.png)															
+			text-align: center;										
 			a
 				height: 50px;
 				padding: 9px;
@@ -154,20 +106,20 @@ header
 .media
 	display: inline-block;
 	height: 100%;
-	width: 25%;
+	width: 30%;
 	vertical-align: top;
 	font-family: norse;
 	ul
 		padding: 0;
 		margin: 0;
 		width: 100%;
+		height: 100%;
 		li
 			width: 100%;
-			height: 191px
+			height: 100px
 			text-align: center;
+			line-height: 100px;
 			a
-				line-height: 100px
-				padding: 43px 0;
 				display: inline-block;
 				font-size: 50px;
 				text-decoration: none;
@@ -180,34 +132,33 @@ header
 	text-align: center;
 	h3
 		margin: 0;
-		padding: 10px 30px;
+		padding: 10px;
 		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 		font-size: 26px;
 		background: $dg;
 		color: $gg;
 		font-weight: 700;
 .main-wrapp
-
 	display: inline-block;
 	font-size: 0;
 	background: $gt;
 	img
-		width: 65%;
+		width: 100%
 		display: inline-block;
-		border: 9px solid $dg;
 		border-top: 0;
 .text-main		
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 35px;
 	padding: 20px;
 	margin: 0;
-	display: inline-block;
-	width: 35%;
+	display: inline-block;	
 	vertical-align: top;
 	h4
+		margin: 0;
 		text-align: center;
 		text-transform: uppercase;
 	p
+		padding: 0 1%;
 		text-indent: 20px;
 		margin: 0;
 		text-align: justify;
@@ -215,9 +166,9 @@ header
 
 
 
-@media screen and (max-width: 1278px)
+@media screen and (max-width: 1280px)
 	.logo
-		width: 45%;
+		width: 50%;
 		padding: 0;
 		h1
 			font-size: 125px;
@@ -229,24 +180,56 @@ header
 
 @media screen and (max-width: 1024px)
 	.logo
-		width: 75%;
-		padding: 4% 0;
+		width: 80%;
 		h1
-			font-size: 150px;
+			font-size: 130px;
 	.media
 		display: none;
 
-@media screen and (max-width: 769px) 
+@media screen and (max-width: 768px)
+	.main
+		margin-top: 50px;
+		clear: both
+	#amb
+		display: block;
+		background: $gg
+	.menu
+		float: left;
+		z-index: 100
+		position: relative;
+		left: 0;
+		top: 50px;
+		width: 30%;
+		height: 0;
+		ul
+			li
+				width: 100%;
+				background: $gtd
+				text-align: left;
 	header
-		border-radius: 0;
-		border: none;
 		img
-			width: 50%;
+			width: 25%;
 			margin: 0;
 		.logo
-			width: 50%;	
-			padding: 0;
+			width: 75%;	
 			h1
 				font-size: 120px;
 			h2
 				display: none;
+
+@media screen and (max-width: 640px)
+	header
+		img
+			width: 30%
+		.logo
+			width: 70%
+			h1
+				line-height: 0.8;
+				font-size: 100px
+
+@media screen and (max-width: 320px)
+	header
+		img
+			display: none;
+		.logo
+			width: 100%;

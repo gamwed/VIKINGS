@@ -4,39 +4,49 @@
 	<meta charset="UTF-8">
 	<title>EV</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 
-<section class="menu">
-	<ul>
-		<li id=home><a href="">Главная</a></li>
-		<li id=news><a href="">Новости</a></li>
-		<li id=team><a href="">Команда</a></li>
-		<li id=time><a href="">Рассписание</a></li>
-		<li id=contacts><a href="">Контакты</a></li>
-	</ul>
-</section>
-
-<header><img alt="East Vikings - бейсбольная команда Харькова" src="head1.png">
-<div class="logo">
-	<h1>East Vikings</h1>
-	<h2 id=tab>Бейсбольная команда Харькова</h2>
-</div>
-<div class="media">
-	<ul>
-		<li><a href="tel:+380952434358">+38(123)-456-78-90</a></li>
-		<li><a href="https://vk.com/kharkivbaseball">VK</a></li>
-	</ul>
-</div>
+<header>
+	<img alt="East Vikings - бейсбольная команда Харькова" src="head1.png">
+	<div class="logo">
+		<h1>East Vikings</h1>
+	</div>
+	<div class="media">
+		<ul>
+			<li><a href="tel:+380952434358">+38(123)-456-78-90</a></li>
+			<li><a href="https://vk.com/kharkivbaseball">VK</a></li>
+		</ul>
+	</div>
 </header>
 
+<section class="menubar">
+
+	<button id="amb">меню</button>
+
+	<div class="menu">
+		<ul id="menuroll">
+			<li id=home><a href="">Главная</a></li>
+			<li id=news><a href="">Новости</a></li>
+			<li id=team><a href="">Команда</a></li>
+			<li id=time><a href="">Рассписание</a></li>
+			<li id=contacts><a href="">Контакты</a></li>
+		</ul>
+	</div>
+</section>
+
 <section class="main">
-	<h3>Главная</h3>
-	<div class="main-wrapp">	
-		<img src="gallery/team.jpg" alt="">
-		<div class="text-main">
-			<h4>Добро пожаловать!</h4>
-			<p>Здесь вы можете следить за нашими спортивными достижениями и быть в курсе нашей командной активности. </p>
+	<div class="container">
+		<h3>Главная</h3>
+		<div class="main-wrapp">	
+			<img src="gallery/team.jpg" alt="">
+			<div class="text-main">
+				<h4>Добро пожаловать!</h4>
+				<p>Здесь вы можете следить за нашими спортивными достижениями и быть в курсе нашей командной активности.</p>
+				<p>На сегодняшний день </p>
+			</div>
 		</div>
 	</div>
 </section>

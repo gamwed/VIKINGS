@@ -10,8 +10,9 @@
   box-sizing: border-box;
 }
 
-/* line 14, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 13, F:/PROGRAMING/Viking/sass/style.sass */
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   background-image: url(vec.png);
@@ -23,46 +24,45 @@ body {
 
 /* line 22, F:/PROGRAMING/Viking/sass/style.sass */
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
-  font-size: 0;
 }
 
-/* line 26, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 25, F:/PROGRAMING/Viking/sass/style.sass */
 header {
+  clear: both;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 50px;
   font-size: 0;
-  height: 400px;
   background: rgba(246, 201, 43, 0.4);
   border: 9px solid #1a3c00;
   border-left: 0;
   border-right: 0;
 }
 
-/* line 36, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 34, F:/PROGRAMING/Viking/sass/style.sass */
 header img {
   display: inline-block;
-  height: 400px;
-  width: 25%;
-  margin-top: -9px;
+  height: 200px;
+  width: 20%;
   border-radius: 150px;
 }
 
-/* line 42, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 39, F:/PROGRAMING/Viking/sass/style.sass */
 .logo {
   display: inline-block;
-  height: 100%;
-  width: 50%;
+  height: 200px;
   vertical-align: top;
-  padding: 4% 0;
+  width: 50%;
 }
 
-/* line 48, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 44, F:/PROGRAMING/Viking/sass/style.sass */
 .logo h1 {
-  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  position: relative;
   margin: 0;
+  top: 5%;
   font-size: 150px;
   text-align: center;
   font-family: norse;
@@ -70,43 +70,52 @@ header img {
   text-shadow: #f5c828 -9px 9px 1px;
 }
 
-/* line 56, F:/PROGRAMING/Viking/sass/style.sass */
-.logo h2 {
-  text-align: center;
-  line-height: 30px;
-  z-index: -99;
+/* line 55, F:/PROGRAMING/Viking/sass/style.sass */
+#amb {
+  display: none;
+  height: 50px;
+  position: absolute;
+  vertical-align: top;
+  left: 0;
+  text-align: left;
+  padding-left: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 24px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  margin: 0;
-  margin-left: 5%;
-  font-size: 26px;
-  font-weight: 700;
-  background: #1a3c00;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-top: 0;
-  padding: 10px 30px;
-  margin-top: 60px;
-  color: #f6c92b;
+  text-transform: uppercase;
+  color: #1a3c00;
+  background: none;
+  border: 0;
+  width: 100%;
 }
 
 /* line 72, F:/PROGRAMING/Viking/sass/style.sass */
-.menu {
-  background: #fff;
-  width: 100%;
-  font-size: 0;
-  display: inline-block;
+#amb:first-letter {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* line 75, F:/PROGRAMING/Viking/sass/style.sass */
+#amb:hover {
+  background: rgba(246, 201, 43, 0.9);
 }
 
 /* line 77, F:/PROGRAMING/Viking/sass/style.sass */
+.menu {
+  background: #fff;
+  font-size: 0;
+}
+
+/* line 80, F:/PROGRAMING/Viking/sass/style.sass */
 .menu ul {
   padding: 0;
   width: 100%;
   font-size: 0;
   display: inline-block;
-  line-height: 25px;
 }
 
-/* line 83, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 85, F:/PROGRAMING/Viking/sass/style.sass */
 .menu ul li {
   font-size: 0;
   display: inline-block;
@@ -115,61 +124,6 @@ header img {
 }
 
 /* line 90, F:/PROGRAMING/Viking/sass/style.sass */
-.menu ul li:first-of-type:hover:after {
-  content: '';
-  display: block;
-  margin-top: -50px;
-  margin-left: 27%;
-  width: 120px;
-  height: 50px;
-  background-image: url(field1.png);
-}
-
-/* line 100, F:/PROGRAMING/Viking/sass/style.sass */
-.menu ul li:nth-of-type(2):hover:after {
-  content: '';
-  display: block;
-  margin-top: -50px;
-  margin-left: 40%;
-  width: 50px;
-  height: 50px;
-  background-image: url(ball.png);
-}
-
-/* line 110, F:/PROGRAMING/Viking/sass/style.sass */
-.menu ul li:nth-of-type(3):hover:after {
-  content: '';
-  display: block;
-  margin-top: -50px;
-  margin-left: 10%;
-  width: 180px;
-  height: 50px;
-  background-image: url(bats.png);
-}
-
-/* line 120, F:/PROGRAMING/Viking/sass/style.sass */
-.menu ul li:nth-of-type(4):hover:after {
-  content: '';
-  display: block;
-  margin-top: -50px;
-  margin-left: 10%;
-  width: 180px;
-  height: 50px;
-  background-image: url(bat.png);
-}
-
-/* line 130, F:/PROGRAMING/Viking/sass/style.sass */
-.menu ul li:last-of-type:hover:after {
-  content: '';
-  display: block;
-  margin-top: -50px;
-  margin-left: 30%;
-  width: 100px;
-  height: 50px;
-  background-image: url(hat.png);
-}
-
-/* line 138, F:/PROGRAMING/Viking/sass/style.sass */
 .menu ul li a {
   height: 50px;
   padding: 9px;
@@ -183,44 +137,44 @@ header img {
   color: #1a3c00;
 }
 
-/* line 149, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 101, F:/PROGRAMING/Viking/sass/style.sass */
 .menu ul li a:first-letter {
   font-size: 30px;
   font-weight: 700;
 }
 
-/* line 152, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 104, F:/PROGRAMING/Viking/sass/style.sass */
 .menu ul li a:hover {
-  background: rgba(246, 201, 43, 0.7);
+  background: rgba(246, 201, 43, 0.9);
 }
 
-/* line 154, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 106, F:/PROGRAMING/Viking/sass/style.sass */
 .media {
   display: inline-block;
   height: 100%;
-  width: 25%;
+  width: 30%;
   vertical-align: top;
   font-family: norse;
 }
 
-/* line 160, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 112, F:/PROGRAMING/Viking/sass/style.sass */
 .media ul {
   padding: 0;
   margin: 0;
   width: 100%;
+  height: 100%;
 }
 
-/* line 164, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 117, F:/PROGRAMING/Viking/sass/style.sass */
 .media ul li {
   width: 100%;
-  height: 191px;
+  height: 100px;
   text-align: center;
+  line-height: 100px;
 }
 
-/* line 168, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 122, F:/PROGRAMING/Viking/sass/style.sass */
 .media ul li a {
-  line-height: 100px;
-  padding: 43px 0;
   display: inline-block;
   font-size: 50px;
   text-decoration: none;
@@ -229,20 +183,20 @@ header img {
   width: 100%;
 }
 
-/* line 177, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 129, F:/PROGRAMING/Viking/sass/style.sass */
 .media ul li:hover {
   background: rgba(246, 201, 43, 0.4);
 }
 
-/* line 179, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 131, F:/PROGRAMING/Viking/sass/style.sass */
 .main {
   text-align: center;
 }
 
-/* line 181, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 133, F:/PROGRAMING/Viking/sass/style.sass */
 .main h3 {
   margin: 0;
-  padding: 10px 30px;
+  padding: 10px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 26px;
   background: #1a3c00;
@@ -250,104 +204,150 @@ header img {
   font-weight: 700;
 }
 
-/* line 189, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 141, F:/PROGRAMING/Viking/sass/style.sass */
 .main-wrapp {
   display: inline-block;
   font-size: 0;
   background: rgba(246, 201, 43, 0.4);
 }
 
-/* line 194, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 145, F:/PROGRAMING/Viking/sass/style.sass */
 .main-wrapp img {
-  width: 65%;
+  width: 100%;
   display: inline-block;
-  border: 9px solid #1a3c00;
   border-top: 0;
 }
 
-/* line 199, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 149, F:/PROGRAMING/Viking/sass/style.sass */
 .text-main {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 35px;
   padding: 20px;
   margin: 0;
   display: inline-block;
-  width: 35%;
   vertical-align: top;
 }
 
-/* line 207, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 156, F:/PROGRAMING/Viking/sass/style.sass */
 .text-main h4 {
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 210, F:/PROGRAMING/Viking/sass/style.sass */
+/* line 160, F:/PROGRAMING/Viking/sass/style.sass */
 .text-main p {
+  padding: 0 1%;
   text-indent: 20px;
   margin: 0;
   text-align: justify;
 }
 
-@media screen and (max-width: 1278px) {
-  /* line 219, F:/PROGRAMING/Viking/sass/style.sass */
+@media screen and (max-width: 1280px) {
+  /* line 170, F:/PROGRAMING/Viking/sass/style.sass */
   .logo {
-    width: 45%;
+    width: 50%;
     padding: 0;
   }
-  /* line 222, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 173, F:/PROGRAMING/Viking/sass/style.sass */
   .logo h1 {
     font-size: 125px;
   }
-  /* line 224, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 175, F:/PROGRAMING/Viking/sass/style.sass */
   .media {
     width: 30%;
   }
-  /* line 226, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 177, F:/PROGRAMING/Viking/sass/style.sass */
   .media a {
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 231, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 182, F:/PROGRAMING/Viking/sass/style.sass */
   .logo {
-    width: 75%;
-    padding: 4% 0;
+    width: 80%;
   }
-  /* line 234, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 184, F:/PROGRAMING/Viking/sass/style.sass */
   .logo h1 {
-    font-size: 150px;
+    font-size: 130px;
   }
-  /* line 236, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 186, F:/PROGRAMING/Viking/sass/style.sass */
   .media {
     display: none;
   }
 }
 
-@media screen and (max-width: 769px) {
-  /* line 240, F:/PROGRAMING/Viking/sass/style.sass */
-  header {
-    border-radius: 0;
-    border: none;
+@media screen and (max-width: 768px) {
+  /* line 190, F:/PROGRAMING/Viking/sass/style.sass */
+  .main {
+    margin-top: 50px;
+    clear: both;
   }
-  /* line 243, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 193, F:/PROGRAMING/Viking/sass/style.sass */
+  #amb {
+    display: block;
+    background: #f6c92b;
+  }
+  /* line 196, F:/PROGRAMING/Viking/sass/style.sass */
+  .menu {
+    float: left;
+    z-index: 100;
+    position: relative;
+    left: 0;
+    top: 50px;
+    width: 30%;
+    height: 0;
+  }
+  /* line 205, F:/PROGRAMING/Viking/sass/style.sass */
+  .menu ul li {
+    width: 100%;
+    background: rgba(246, 201, 43, 0.9);
+    text-align: left;
+  }
+  /* line 210, F:/PROGRAMING/Viking/sass/style.sass */
   header img {
-    width: 50%;
+    width: 25%;
     margin: 0;
   }
-  /* line 246, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 213, F:/PROGRAMING/Viking/sass/style.sass */
   header .logo {
-    width: 50%;
-    padding: 0;
+    width: 75%;
   }
-  /* line 249, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 215, F:/PROGRAMING/Viking/sass/style.sass */
   header .logo h1 {
     font-size: 120px;
   }
-  /* line 251, F:/PROGRAMING/Viking/sass/style.sass */
+  /* line 217, F:/PROGRAMING/Viking/sass/style.sass */
   header .logo h2 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* line 222, F:/PROGRAMING/Viking/sass/style.sass */
+  header img {
+    width: 30%;
+  }
+  /* line 224, F:/PROGRAMING/Viking/sass/style.sass */
+  header .logo {
+    width: 70%;
+  }
+  /* line 226, F:/PROGRAMING/Viking/sass/style.sass */
+  header .logo h1 {
+    line-height: 0.8;
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 232, F:/PROGRAMING/Viking/sass/style.sass */
+  header img {
+    display: none;
+  }
+  /* line 234, F:/PROGRAMING/Viking/sass/style.sass */
+  header .logo {
+    width: 100%;
   }
 }
 
