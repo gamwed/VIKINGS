@@ -1,0 +1,252 @@
+$dg: #1a3c00;
+$gg: #f6c92b;
+$gt: rgba(246,201,43,0.4);
+$dtr: rgba(26,60,0,0.4);
+$gtd: rgba(246,201,43,0.7);
+@font-face
+	font-family: norse;
+	src: url(NB.ttf);
+*
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+body
+	margin: 0;
+	padding: 0;
+	background-image: url(vec.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+.container
+	width: 95%;
+	margin: 0 auto;
+	font-size: 0;
+header
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	font-size: 0;
+	height: 400px;
+	background: $gt;
+	border: 9px solid $dg;
+	border-left: 0;
+	border-right: 0;
+	img
+		display: inline-block;
+		height: 400px;
+		width: 25%;
+		margin-top: -9px;
+		border-radius: 150px
+.logo
+	display: inline-block;	
+	height: 100%;
+	width: 50%;
+	vertical-align: top;
+	padding: 4% 0;
+	h1
+		height: 100%;
+		margin: 0;
+		font-size: 150px;
+		text-align: center;
+		font-family: norse;
+		color: $dg;
+		text-shadow: rgb(245, 200, 40) -9px 9px 1px;
+	h2
+		text-align: center;
+		line-height: 30px;
+		z-index: -99;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		margin: 0;
+		margin-left: 5%
+		font-size: 26px;
+		font-weight: 700;
+		background: $dg;
+		border-bottom-right-radius: 100px;
+		border-bottom-left-radius: 100px;
+		border-top: 0;
+		padding: 10px 30px;
+		margin-top: 60px;
+		color: $gg;
+.menu
+	background: #fff;
+	width: 100%;
+	font-size: 0;
+	display: inline-block;
+	ul
+		padding: 0;
+		width: 100%;
+		font-size: 0;
+		display: inline-block;
+		line-height: 25px;
+		li
+			font-size: 0;
+			display: inline-block;
+			width: 20%;
+			text-align: center;
+			&:first-of-type
+				&:hover
+						&:after
+							content: '';
+							display: block;
+							margin-top: -50px;
+							margin-left: 27%;
+							width: 120px;
+							height: 50px;
+							background-image: url(field1.png);
+			&:nth-of-type(2)
+				&:hover
+						&:after
+							content: '';
+							display: block;
+							margin-top: -50px;
+							margin-left: 40%;
+							width: 50px;
+							height: 50px;
+							background-image: url(ball.png);	
+			&:nth-of-type(3)
+				&:hover
+						&:after
+							content: '';
+							display: block;
+							margin-top: -50px;
+							margin-left: 10%;
+							width: 180px;
+							height: 50px;
+							background-image: url(bats.png);
+			&:nth-of-type(4)
+				&:hover
+						&:after
+							content: '';
+							display: block;
+							margin-top: -50px;
+							margin-left: 10%;
+							width: 180px;
+							height: 50px;
+							background-image: url(bat.png);
+			&:last-of-type
+				&:hover
+						&:after
+							content: '';
+							display: block;
+							margin-top: -50px;
+							margin-left: 30%;
+							width: 100px;
+							height: 50px;
+							background-image: url(hat.png)															
+			a
+				height: 50px;
+				padding: 9px;
+				display: inline-block;
+				width: 100%;
+				font-weight: 500;
+				text-decoration: none;
+				font-size: 24px;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				text-transform: uppercase;
+				color: $dg;
+				&:first-letter
+					font-size: 30px;
+					font-weight: 700;
+				&:hover
+					background: $gtd;
+.media
+	display: inline-block;
+	height: 100%;
+	width: 25%;
+	vertical-align: top;
+	font-family: norse;
+	ul
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		li
+			width: 100%;
+			height: 191px
+			text-align: center;
+			a
+				line-height: 100px
+				padding: 43px 0;
+				display: inline-block;
+				font-size: 50px;
+				text-decoration: none;
+				color: $dg;
+				height: 100%;
+				width: 100%;	
+			&:hover
+				background: $gt;
+.main
+	text-align: center;
+	h3
+		margin: 0;
+		padding: 10px 30px;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 26px;
+		background: $dg;
+		color: $gg;
+		font-weight: 700;
+.main-wrapp
+
+	display: inline-block;
+	font-size: 0;
+	background: $gt;
+	img
+		width: 65%;
+		display: inline-block;
+		border: 9px solid $dg;
+		border-top: 0;
+.text-main		
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 35px;
+	padding: 20px;
+	margin: 0;
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	h4
+		text-align: center;
+		text-transform: uppercase;
+	p
+		text-indent: 20px;
+		margin: 0;
+		text-align: justify;
+		
+
+
+
+@media screen and (max-width: 1278px)
+	.logo
+		width: 45%;
+		padding: 0;
+		h1
+			font-size: 125px;
+	.media
+		width: 30%;
+		a
+			font-size: 25px	
+
+
+@media screen and (max-width: 1024px)
+	.logo
+		width: 75%;
+		padding: 4% 0;
+		h1
+			font-size: 150px;
+	.media
+		display: none;
+
+@media screen and (max-width: 769px) 
+	header
+		border-radius: 0;
+		border: none;
+		img
+			width: 50%;
+			margin: 0;
+		.logo
+			width: 50%;	
+			padding: 0;
+			h1
+				font-size: 120px;
+			h2
+				display: none;
