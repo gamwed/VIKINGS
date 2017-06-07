@@ -1,0 +1,286 @@
+$red: #eb0b01;
+
+*
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+body
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.container
+	width: 970px;
+	margin: 0 auto;
+header
+	margin-top: 15px;
+.logo
+	display: block;
+	width: 100%;
+	height: 50px
+	border-bottom: 2px solid $red;
+	h1
+		float: left;
+		text-transform: uppercase;
+		margin: 0;
+		font-weight: 200;
+		font-size: 22pt;
+		margin-right: 20px;
+	h2
+		float: left;
+		margin: 0;
+		font-weight: 200;
+		font-size: 10pt;
+		text-align: center;
+.feed
+	float: right;
+	font-size: 0;
+	display: inline-block;
+	a
+		text-align: right;
+		display: inline-block;
+		font-size: 10pt;
+		margin-left: 30px;
+.tel
+	text-decoration: none;
+	color: #000
+	&::before
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(tel.png);
+		-webkit-background-size: cover;
+		background-size: cover;		
+.recall
+	font-weight: bold;
+	color: #000
+.menubar
+	display: block;
+	height: 100%;
+	position: relative;		
+.menu
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	height: 50px;
+	-ms-align-items: center;
+	align-items: center;
+	a
+		text-decoration: none;
+		color: #000
+		font-weight: bold;
+		width: 100%;
+		padding: 16px;
+		text-align: center;
+		&:hover
+			&:after
+				content: '';
+				display: block;
+				position: absolute;
+				width: 135px;
+				height: 2px;
+				background: $red;
+				bottom: 8px;
+				margin-left: -13px;
+
+.slider		
+.swiper-slide
+	height: 450px;
+	background-size: cover
+    background-position: center;
+.tab
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;   
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	h3
+		font-size: 18pt;
+		font-weight: 200;
+		&::after
+			content: '';
+			display: block;
+			width: 100%;
+			height: 2px;
+			background: $red;
+.news-row
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	height: 120px;
+.new
+	font-size: 0;
+	img
+		display: inline-block;
+.info
+	vertical-align: top;
+	width: calc(100% - 120px);	
+	margin-left: 10px;
+	display: inline-block;	
+	p
+		font-size: 10pt;
+		display: block;
+		margin: 0;
+		vertical-align: bottom;
+		width: 90%;
+.time
+	font-size: 11pt;
+	vertical-align: top;
+	display: inline-block;
+	color: grey;
+.title
+	text-decoration: none;
+	font-size: 12pt;
+	display: block;
+	margin: 10px 0;
+	font-weight: bold;
+	color: blue;
+.why
+	font-size: 0;
+	height: 350px;
+.why_row
+	height: 250px		
+.viz
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+	height: 240px;	
+	h4
+		font-size: 16pt;
+		font-weight: 500;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 10px;
+	p
+		margin: 0 auto;
+		font-size: 10pt;
+		text-align: center;
+		width: 80%;
+		height: 100px;
+		vertical-align: top;
+	&:after
+		content: '';
+		display: block;
+		position: relative;
+		width: 2px;
+		height: 240px;
+		background: $red;
+		top: -275px
+		right: -240px;
+		vertical-align: top;
+	&:last-of-type
+		&:after
+			display: none;
+.img_round
+	background: #ccc;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 200px
+	border: 2px solid #808080
+	margin-left: calc(50% - 50px);
+	margin-bottom: 20px;
+	margin-top: 20px;
+.feedback
+	background: $red;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0;
+	h5
+		font-size: 20pt;
+		text-align: center;
+		color: #fff;
+		margin: 0;
+	p
+		font-size: 15pt;
+		display: inline-block;
+		width: 50%;
+		vertical-align: middle;
+	input
+		display: block;
+		width: 100%;
+		text-align: center;	
+		font-size: 15pt;
+		padding: 5px;	
+#telef
+	font-size: 15pt
+	text-align: center;
+	display: inline-block;
+	width: 50%;
+	padding: 5px;
+	vertical-align: middle;
+.about
+	font-size: 0;
+	padding-top: 50px;
+	margin-bottom: 50px;	
+.about_text
+	display: inline-block;
+	width: 60%;
+	vertical-align: top;
+	p
+		margin: 0;
+		font-size: 14pt;
+		padding-right: 20px;
+.about_img
+	display: inline-block;
+	width: 40%;
+	img
+		width: 100%;
+#left_side
+	justify-content: flex-start;
+	h3
+		margin-top: 0;
+.footer
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+.contacts	
+	width: 300px;
+	height: 250px;
+	p
+		margin-top: 0;
+		font-size: 14pt;
+	a
+		text-decoration: none;
+		font-size: 14pt;
+		color: #000	
+.social
+	a
+		margin-right: 5px;
+		img
+			width: 30px;
+			height: 30px;	
+.group
+	width: 300px;
+	height: 250px;	
+.request
+	width: 300px;
+	height: 250px;
+footer
+	padding-bottom: 50px;			
